@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/list_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/id_imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            style="@style/HP_HomeText"
+            android:id="@+id/id_nameView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toRightOf="@id/id_imageView"
+            android:text="Text"/>
+        <TextView
+            style="@style/HP_Text"
+            android:id="@+id/id_patronus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id_nameView"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@id/id_imageView"
+            android:text="Patronus:" />
+        <TextView
+            style="@style/HP_Text"
+            android:id="@+id/id_descView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id_nameView"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@id/id_patronus"
+            android:text="Description" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
